@@ -1,13 +1,14 @@
 #!/bin/bash
-USER_ID=$(id -u)
 
 log_denial(){
-    echo "Unauthorized access attempt by User ID: $USER_ID on $(date)" >> security_audit.txt
+      echo "unauthorized access attempted by user ID: $USER_ID on $(date)" >> security_audit.txt
 }
+USER_ID=$(id -u)
+
 if [ $USER_ID -ne 0 ]; then
    echo "Access Denied! You are not the Root user (Grandfather)."
    echo "Current User ID is: $USER_ID"
-    log_denial;
+    log_denial
    exit 1
 else 
    echo "Access Granted! Welcome, Root User"
