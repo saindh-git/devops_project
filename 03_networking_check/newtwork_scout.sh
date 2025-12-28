@@ -6,6 +6,7 @@ do
      nc -z -w 1 $Target $Port
     if [ $? -eq 0 ]; then
       echo "Port $Port: OPEN (Welcome!)"
+      echo "$(date) - Port $PORT: OPEN"
     else 
        echo "Port $Port: CLOSED(locked)"
     fi
