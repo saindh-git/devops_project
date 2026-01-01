@@ -1,0 +1,10 @@
+{
+    "hostname": "prod-app-01",
+    "ip": "10.0.0.100",
+    "services": [
+        "nginx",
+        "postgresql",
+        "redis"
+    ],
+    "health_check": true
+}
