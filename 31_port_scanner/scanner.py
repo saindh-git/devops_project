@@ -1,0 +1,15 @@
+import socket
+target = "127.0.0.1"
+def scan_port(ip,port):
+    probe = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    probe.settimeout(1.0)
+    result = probe.connect_ex(ip,port)
+    if result == 0:
+        print(f"Room{port}:[OPEN]-The door is unlocked!")
+    else:
+        print(f"Room {port}: [CLOSED] - No entry.")    
+    probe.close()
+print(f"--- Scanning Estate: {target} ---")
+scan_port(target,22)
+scan_port(target,80)
+
