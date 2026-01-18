@@ -1,0 +1,6 @@
+total 12
+drwxr-xr-x  2 sainadh sainadh 4096 Jan 18 08:22 .
+drwxr-xr-x 39 sainadh sainadh 4096 Jan 18 08:14 ..
+-rw-r--r--  1 sainadh sainadh    0 Jan 18 08:22 permissions_audit.txt
+-rw-r--r--  1 sainadh sainadh   17 Jan 18 08:16 recipe.txt
+-rwx------  1 sainadh sainadh    0 Jan 18 08:20 secret_vault.txt
